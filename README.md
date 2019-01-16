@@ -1,5 +1,6 @@
-# my-first-website
-I made this website during my web design class in college.
+# My First Website
+I made this website during my web design class in college. I made it with hmtl and css.
 
-Fall 2018
-Computer Science 257 - Introduction To Web Page Design
+Semester: Fall 2018
+
+Class: Computer Science 257 - Introduction To Web Page Design
