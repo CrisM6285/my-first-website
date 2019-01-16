@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+	Author:			Cristian Moreno
+	Date Created:	October 7, 2018
+	Finished: 		December 6, 2018
+
+	This website is to show people my skills I have with computer repairing
+	and hopefully they contact me to do business with them.
+-->
+
+<html>
+	<head>
+		<title>
+			Cristian's PC Repair Shop
+		</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="images/Icon.ico" type="image/x-icon">
+	</head>
+	<body id="Top">
+		<div class="LeftSidebar">
+			<div>
+				<img src="images/Logo.png" alt="Logo" title="Logo" id="Logo">
+			</div>
+			<div>
+				<!-- Navigation -->
+				<ul class="Navigation">
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Services.html">Services</a></li>
+					<li><a class="active" href="#Top">Gallery</a></li>
+					<li><a href="Video.html">Video</a></li>
+					<li><a href="About Me.html">About Me</a></li>
+					<li><a href="Contact Me.html">Contact Me</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Created a div to specifically edit everything under the title -->
+		<div class="Content">
+			<div class="InnerContent">
+				<img id="NavPics" src="images/Navigation/Gallery.png" alt="Home Title" title="Gallery">
+
+				<div>
+					<p>
+						Here is a couple of PC builds I found on the internet. Custom built PC's are a work of art.
+					</p>
+				</div>
+				<!-- Gallery [START] -->
+				<!-- The image columns -->
+				<div class="row">
+					<div class="column">
+						<img src="images/Slideshow/BlackBuild.jpg" alt="Black PC Build" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						<img src="images/Slideshow/BlackRedBuild.jpg" alt="Black/Red PC Build" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						<img src="images/Slideshow/RedBuild.jpg" alt="Red PC Build" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						<img src="images/Slideshow/WhiteBuild.jpg" alt="White PC Build" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						<img src="images/Slideshow/RedCooledBuild.jpg" alt="Red Watercooled PC Build" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						<img src="images/Slideshow/RGBBuild.jpg" alt="RGB PC Build" onclick="myFunction(this);">
+					</div>
+				</div>
+				<div class="container">
+					<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					<div id="imgtext"></div>
+					<img id="expandedImg">
+				</div>
+				
+				<script>
+				function myFunction(imgs) {
+					var imgText = document.getElementById("imgtext");
+					var expandImg = document.getElementById("expandedImg");
+					expandImg.src = imgs.src;
+					imgText.innerHTML = imgs.alt;
+					expandImg.parentElement.style.display = "block";
+				}
+				</script>
+				<!-- Gallery [END] -->
+				
+				<!-- Arrow to Top -->
+				<a href="#Top">
+					<img src="images/ArrowTop.png" class="Arrow" alt="Top of the page" title="Go to top of page">
+				</a>
+			</div>
+		</div>
+		<div class="Footer">
+			<div class="FooterContent">
+				<div class="WebTitle">
+					<img src="images/Title.png" alt="Title" title="Title" class="Title">
+				</div>
+				<div class="SocialMedia">
+					<div class="SMRow">
+						<div class="SMColumn">
+							<a href="#">
+								<img src="images/SocialMedia/Twitter.png" alt="Twitter Social Media">
+							</a>
+						</div>
+						<div class="SMColumn">
+							<a href="#">
+								<img src="images/SocialMedia/Instagram.png" alt="Instagram Social Media">
+							</a>
+						</div>
+						<div class="SMColumn">
+							<a href="#">
+								<img src="images/SocialMedia/Facebook.png" alt="Facebook Social Media">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="Copyright">
+					<p>
+						Copyright &copy; 2019 Cristian Moreno. All Rights Reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

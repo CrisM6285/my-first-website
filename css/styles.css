@@ -1,0 +1,384 @@
+body {
+	background-color: #cecece;
+	color: #4b4949;
+}
+
+
+h2 {
+	color: #6ea6af;
+	font-size: 1.5em;
+}
+
+h3 {
+	color: green;
+	font-size: 1.16em;
+}
+
+h2 ~ p {
+	padding-left: 25px;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+h3 ~ p {
+	padding-left: 40px;
+}
+
+p {
+	padding: 2px;
+	line-height: 1.5;
+}
+
+
+/* Link related */
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: darkblue;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: green;
+}
+
+a:active {
+	color: blue;
+}
+/* Link related */
+
+.Content {
+	display: block;
+	font-family: Arial;
+	max-width: 64%;
+	margin: auto;
+	background-color: #f3f3f3;
+	border-radius: 8px;
+}
+
+.InnerContent {
+	padding: .25in;
+}
+
+.LeftSidebar {
+	min-width: 160px;
+	max-width: 17%;
+	float: left;
+	position: fixed;
+	margin: auto;
+}
+
+
+		/* Footer [START] */
+.Footer {
+	max-width: 64%;
+	margin: auto;
+	background-color: #f3f3f3;
+	border-radius: 8px;
+	margin-top: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+/* This makes the div's width only 75% of the Footer class and makes any text centered */
+.FooterContent {
+	max-width: 75%;
+	margin: auto;
+	text-align: center;
+}
+
+/* Each div is seperated by padding instead of using <br> between each div */
+.FooterContent div {
+	padding: 3px;
+}
+
+/* Max width of this div is 300px */
+.WebTitle {
+	max-width: 300px;
+	margin: auto;
+}
+
+/* 100% of WebTitle class which is 300px */
+.WebTitle img {
+	max-width: 100%;
+}
+
+.SMRow {
+	display: flex;
+}
+
+.SocialMedia {
+	margin: auto;
+	max-width: 100px;
+}
+
+.SMColumn {
+	flex: 33.3333%;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.SMColumn img {
+	max-width: 23px;
+}
+
+.Copyright {
+	display: block;
+}
+
+.Copyright p {
+	font-size: 14px;
+	margin: 0;
+}
+		/* Footer [END] */
+
+#Logo {
+	display: block;
+	margin: 0 auto;
+	max-width: 65%;
+	overflow: auto;
+	padding-bottom: 5px;
+}
+
+.Navigation {
+	list-style-type: none;
+	padding: 0;
+	background-color: #f3f3f3;
+	overflow: auto;
+	border: 1px solid black;
+	max-width: 50%;
+	margin: auto;
+}
+
+.Navigation a {
+	text-align: center;
+	display: block;
+	color: #000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+.Navigation a.active {
+	background-color: #303030;
+	color: #fff;
+}
+
+.Navigation li a:hover:not(.active) {
+	background-color: #6ea6af;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.Arrow {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	height: 60px;
+}
+
+#SbS {
+	display: flex;
+    box-sizing: border-box;
+}
+
+.AMSide {
+	flex: 50%;
+	padding: 5px;
+}
+
+.AMSide p {
+	margin-top: 0;
+}
+
+#AMPic {
+	max-width: 100%;
+}
+
+#NavPics {
+	min-height: 70px;
+	max-height: 75px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+	width: auto;
+}
+
+.ResponsiveImages a img {
+	width: auto;
+	max-width: 100%;
+	height: 250px;
+	border: 1px solid black;
+}
+
+.ResponsiveImages hr {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.Video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	max-width: 100%;
+	width: 650px;
+	height: 400px;
+}
+
+
+
+		/* Gallery[START] */
+
+/* The grid */
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 16.6666%;
+	padding: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+	opacity: 0.75; 
+	cursor: pointer;
+	width: 100%;
+	height: 200px;
+	margin: 0;
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+/* The expanding image container */
+.container {
+	position: relative;
+	display: none;
+}
+
+/* Make container images 100% */
+#expandedImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	top: 12px;
+	left: 30px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #343434;
+	padding: 5px;
+	margin: 0;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	color: #000;
+	font-size: 35px;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+		/* Gallery[END] */
+
+
+		/* Form [START] */
+
+/* Bold Label */
+label {
+	display: block;
+	font-weight: bold;
+	line-height: 20px;
+	color: #000;
+}
+
+/* Adds some space inside the textboxes */
+input[type=text], input[type=email], textarea {
+	margin-top: 3px;
+	margin-bottom: 20px;
+	padding: 4px;
+}
+
+/* Bolds textbox when in focus */
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+}
+
+input[type=radio] {
+	cursor: pointer;
+}
+
+#RequiredField {
+	font-weight: 1;
+	color: #c00;
+}
+
+/* Sets radio text labels back to normal */
+.RadioLabel {
+	font-weight: normal;
+	display: inline;
+	cursor: pointer;
+}
+
+/* Red Asterick */
+.form-required {
+	color: #c00;
+}
+
+/* Setting Input Textbox size */
+.InputTextBox {
+	width: 250px;
+	max-width: 100%;
+}
+
+/* Specifies W x H and makes it so they can't enlarge it more than the page */
+textarea {
+	width: 500px;
+	height: 200px;
+	max-width: 98%;
+	max-height: 1000px;
+}
+
+/* Design buttons */
+.Buttons {
+	border: none;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #303030;
+	color: #fff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+/* When hover over button */
+.Buttons:hover {
+	text-decoration: underline;
+}
+
+/* Creating space between both buttons */
+.Buttons[type=reset] {
+	margin-right: 3px;
+}
+
+.Buttons[type=submit] {
+	margin-left: 3px;
+}
+		/* Form [END] */
