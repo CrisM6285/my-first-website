@@ -3,6 +3,7 @@
 	Author:			Cristian Moreno
 	Date Created:	October 7, 2018
 	Finished: 		December 6, 2018
+	Updated:		May 9, 2019
 
 	This website is to show people my skills I have with computer repairing
 	and hopefully they contact me to do business with them.
@@ -16,155 +17,111 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="icon" href="images/Icon.ico" type="image/x-icon">
 	</head>
-	<body id="Top">
-		<div class="LeftSidebar">
-			<div>
-				<img src="images/Logo.png" alt="Logo" title="Logo" id="Logo">
-			</div>
-			<div>
-				<!-- Navigation -->
-				<ul class="Navigation">
-					<li><a href="index.html">Home</a></li>
-					<li><a class="active" href="#Top">Services</a></li>
-					<li><a href="Gallery.html">Gallery</a></li>
-					<li><a href="Video.html">Video</a></li>
-					<li><a href="About Me.html">About Me</a></li>
-					<li><a href="Contact Me.html">Contact Me</a></li>
-				</ul>
-			</div>
+	<body>
+		<div class="Wrapper Top">
+			<nav class="NavBar">
+				<div class="NavItems"><a href="index.html">Home</a></div>
+				<div class="NavItems Active"><a href="#Top">Services</a></div>
+				<div class="NavItems"><a href="Gallery.html">Gallery</a></div>
+				<div class="NavItems"><a href="Video.html">Video</a></div>
+				<div class="NavItems"><a href="About Me.html">About Me</a></div>
+				<div class="NavItems"><a href="Contact Me.html">Contact Me</a></div>
+			</nav>
 		</div>
-		<!-- Created a div to specifically edit everything under the title -->
-		<div class="Content">
-			<div class="InnerContent">
-				<div class="ResponsiveImages">
-					<img id="NavPics" src="images/Navigation/Services.png" alt="Services Title" title="Services">
-					<h2 id="Offer">
-						What I can offer you
-					</h2>
+		<div class="ContentBox">
+			<main class="InnerContent">
+				<h1 class="MainHeaders">Services</h1>
+				<div id="OfferNav">
+					<h2 class="SrvcTtls">What I offer</h2>
 					<ul>
 						<li><a href="#Virus">Remove viruses</a></li>
 						<li><a href="#Heating">PC/Laptop heating problems</a></li>
-						<li><a href="#Upgrade">Upgrade/replace parts</a></li>
-							<ul><li><a href="#Memory">Memory</a></li></ul>
-							<ul><li><a href="#GPU"><abbr title="Graphics Processing Unit">GPU</abbr></a></li></ul>
-							<ul><li><a href="#CPU">CPU</a></li></ul>
-							<ul><li><a href="#HD">Hard Drives</a></li></ul>
+						<li><a href="#Upgrade">Upgrade/replace parts</a>
+							<ul>
+								<li><a href="#Memory">Memory</a></li>
+								<li><a href="#GPU">GPU (Graphics Processing Unit)</a></li>
+								<li><a href="#CPU">CPU (Central Processing Unit)</a></li>
+								<li><a href="#HD">Hard Drives</a></li>
+							</ul>
+						</li>
 						<li><a href="#Cable">Cable Management</a></li>
 					</ul>
-					<hr>
+				</div>
+				<div class="OfferBoxes">
 					<!-- This explains more in-depth of the services I provide -->
-					  <h2 id="Virus">
-						Remove Viruses
-					  </h2>
-	                  <a href="https://www.justlaptops.co.nz/blog/wp-content/uploads/2017/04/virus-removal-graphic.jpg" target="_blank">
-	                    <img src="images/RemoveVirus.jpg" alt="Virus Removal" title="Remove Viruses">
-	                  </a>
-	                  <p>
-	                    Whether you're on Facebook or YouTube there is always side banners that are full of advertisements and sometimes you click on them by accident or curiosity and end up having viruses. I can go inside the computer's folders and scan for viruses. I can also remove any unwanted programs making your PC faster!
-	                    </p>
-					<hr>
-					<h2 id="Heating">
-						PC Heating Problems
-					</h2>
+					<a id="Virus">&nbsp;</a>
+					<h2 class="SrvcTtls">Remove Viruses</h2>
+					<a href="https://www.justlaptops.co.nz/blog/wp-content/uploads/2017/04/virus-removal-graphic.jpg" target="_blank">
+						<img src="images/RemoveVirus.jpg" alt="Virus Removal" title="Remove Viruses">
+					</a>
+					<p>Whether you're on Facebook or YouTube there is always side banners that are full of advertisements and sometimes you click on them by accident or curiosity and end up having viruses. I can go inside the computer's folders and scan for viruses. I can also remove any unwanted programs making your PC faster!</p>
+				</div>
+				<div class="OfferBoxes">
+					<a id="Heating">&nbsp;</a>
+					<h2 class="SrvcTtls">PC Heating Problems</h2>
 					<a href="https://i.ytimg.com/vi/0ZvWkHPon1U/maxresdefault.jpg" target="_blank">
 						<img src="images/DustyPC.jpg" alt="Dusty Heatsink" title="Dusty Heatsink">
 					</a>
-					<p>
-						If your computer is suddenly turning off it can mean your computer is heating up. I can take apart the computer/laptop and look inside to see if maybe a fan is disconnected or if maybe the CPU needs to have the thermal paste re-applied since it's factory date. Sometimes the machine is heating up due to not having it cleaned in years and dust have accumulated.
-					</p>
-					<hr>
-					<h2 id="Upgrade">
-						Upgrade/Replace Parts
-					</h2>
+					<p>If your computer is suddenly turning off it can mean your computer is heating up. I can take apart the computer/laptop and look inside to see if maybe a fan is disconnected or if maybe the CPU needs to have the thermal paste re-applied since it's factory date. Sometimes the machine is heating up due to not having it cleaned in years and dust have accumulated.</p>
+				</div>
+				
+				<div class="OfferBoxes">
+					<a id="Upgrade">&nbsp;</a>
+					<h2 class="SrvcTtls">Upgrade/Replace Parts</h2>
 					<a href="https://www.digitalstorm.com/img/desktops-2017-10-09-1.jpg" target="_blank">
 						<img src="images/CustomPC.jpg" alt="Custom Built PC" title="Custom Built PC">
 					</a>
-					<p>
-						Have you ever wanted to play a PC game like Fortnite but couldn't because your computer doesn't meet the requirements to play the game? Well if that is the case then I can take a look what components you have installed on your PC and see what can be upgraded to be able to run the newest games.
-						<h3 id="Memory">
-							Memory
-						</h3>
+					<p>Have you ever wanted to play a PC game like Fortnite but couldn't because your computer doesn't meet the requirements to play the game? Well if that is the case then I can take a look what components you have installed on your PC and see what can be upgraded to be able to run the newest games.</p>
+					<div class="UpParts">
+						<a id="Memory">&nbsp;</a>
+						<h3 >Memory</h3>
 						<a href="https://images-na.ssl-images-amazon.com/images/I/81TZAldTMdL._SL1500_.jpg" target="_blank">
 							<img src="images/RAM.jpg" alt="RAM Sticks" title="RAM Sticks">
 						</a>
-						<p>
-							If you like having 20 tabs open in your browser but it your computer can't handle it then I can add more memory for you so the computer can run faster with 20 tabs open.
-						</p>
-						<h3 id="GPU">
-							GPU (Graphics Processing Unit)
-						</h3>
+						<p>If you like having 20 tabs open in your browser but it your computer can't handle it then I can add more memory for you so the computer can run faster with 20 tabs open.</p>
+					</div>
+					<div class="UpParts">
+						<a id="GPU">&nbsp;</a>
+						<h3 >GPU (Graphics Processing Unit)</h3>
 						<a href="http://media.gamersnexus.net/images/media/2016/systems/how-to/how-to-build-pc-gpu-2.jpg" target="_blank">
 							<img src="images/GPU.jpg" alt="GPU" title="GPU">
 						</a>
-						<p>
-							Want to run games and programs faster then upgrading a Graphics card will help you with that and I can install it for you.
-						</p>
-						<h3 id="CPU">
-							CPU (Central Processing Unit)
-						</h3>
+						<p>Want to run games and programs faster then upgrading a Graphics card will help you with that and I can install it for you.</p>
+					</div>
+					<div class="UpParts">
+						<a id="CPU">&nbsp;</a>
+						<h3 >CPU (Central Processing Unit)</h3>
 						<a href="https://cdn.mos.cms.futurecdn.net/G2MocjQ4W79R749nhBhRy4-480-80.jpg" target="_blank">
 							<img src="images/CPU.jpg" alt="CPU" title="CPU">
 						</a>
-						<p>
-							I can check what motherboard you have on your PC and I can add a better CPU if needed.
-						</p>
-						<h3 id="HD">
-							Hard Drives
-						</h3>
+						<p>I can check what motherboard you have on your PC and I can add a better CPU if needed.</p>
+					</div>
+					<div class="UpParts">
+						<a id="HD">&nbsp;</a>
+						<h3 >Hard Drives</h3>
 						<a href="https://i.ytimg.com/vi/-XZNr7mS0iw/maxresdefault.jpg" target="_blank">
 							<img src="images/SSD.jpg" alt="SSD" title="SSD">
 						</a>
-						<p>
-							Running out of space? Then I can add either a HDD or if you want something more faster but a bit more pricey then a SSD is the way to go.
-						</p>
-					</p>
-					<hr>
-					<h2 id="Cable">
-						Cable Management
-					</h2>
+						<p>Running out of space? Then I can add either a HDD or if you want something more faster but a bit more pricey then a SSD is the way to go.</p>
+					</div>
+				</div>
+				<div class="OfferBoxes">
+					<a id="Cable">&nbsp;</a>
+					<h2 class="SrvcTtls">Cable Management</h2>
 					<a href="https://i.pinimg.com/originals/ce/c4/25/cec425f4f6e6ea09b716ea9689600c3f.jpg" target="_blank">
 						<img src="images/Cable.jpg" alt="Cable Management" title="Cable Management">
 					</a>
-					<p>
-						If you already have a custom built PC but you didn't do a good job at managing your cables then I can do that for you so it can look 100x cleaner!
-					</p>
+					<p>If you already have a custom built PC but you didn't do a good job at managing your cables then I can do that for you so it can look 100x cleaner!</p>
 				</div>
-				<!-- Arrow to Top -->
-				<a href="#Top">
-					<img src="images/ArrowTop.png" class="Arrow" alt="Top of the page" title="Go to top of page">
-				</a>
-			</div>
+			</main>
 		</div>
-		<div class="Footer">
-			<div class="FooterContent">
-				<div class="WebTitle">
-					<img src="images/Title.png" alt="Title" title="Title" class="Title">
-				</div>
-				<div class="SocialMedia">
-					<div class="SMRow">
-						<div class="SMColumn">
-							<a href="#">
-								<img src="images/SocialMedia/Twitter.png" alt="Twitter Social Media">
-							</a>
-						</div>
-						<div class="SMColumn">
-							<a href="#">
-								<img src="images/SocialMedia/Instagram.png" alt="Instagram Social Media">
-							</a>
-						</div>
-						<div class="SMColumn">
-							<a href="#">
-								<img src="images/SocialMedia/Facebook.png" alt="Facebook Social Media">
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="Copyright">
-					<p>
-						Copyright &copy; 2019 Cristian Moreno. All Rights Reserved
-					</p>
-				</div>
+		<footer class="FooterBar">
+			<div class="WebTitle">
+				<p>Add later.</p>
 			</div>
-		</div>
+		</footer>
+		<a href="#Top">
+			<img src="images/ArrowTop.png" class="Arrow" alt="Top of the page" title="Go to top of page">
+		</a>
 	</body>
 </html>
