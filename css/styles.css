@@ -1,176 +1,135 @@
 body {
-	background-color: #cecece;
-	color: #4b4949;
+	background-color: #252525;
+	color: #AFAFAF;
+	font-size: .8em;
+	font-family: arial, sans-serif;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
-
-
 h2 {
 	color: #6ea6af;
-	font-size: 1.5em;
 }
-
 h3 {
 	color: green;
-	font-size: 1.16em;
-}
-
-h2 ~ p {
-	padding-left: 25px;
-	font-size: 1em;
-	font-weight: normal;
-}
-
-h3 ~ p {
-	padding-left: 40px;
-}
-
-p {
-	padding: 2px;
-	line-height: 1.5;
 }
 
 
-/* Link related */
-a:link {
-	color: blue;
-}
+		/* Link related [START]*/
 
-a:visited {
-	color: darkblue;
+#OfferNav a {
+	text-decoration: none;
+	color: #a1b3e4;
+}
+#OfferNav a:hover {
 	text-decoration: underline;
 }
+#OfferNav a:visited {
+	color: #a1b3e4;
+}
+		/* Link related [END]*/
 
-a:hover {
-	color: green;
+
+
+
+
+.MainContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
 }
 
-a:active {
-	color: blue;
-}
-/* Link related */
 
-.Content {
-	display: block;
-	font-family: Arial;
-	max-width: 64%;
-	margin: auto;
-	background-color: #f3f3f3;
-	border-radius: 8px;
-}
 
+
+		/* Navigation Bar [START] */
+
+.Wrapper {
+	position: sticky;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+}
+.NavBar {
+	background-color: #1B1B1B;
+	box-shadow: 0 1px 6px 0 #000000a1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.NavItems {
+	padding: 15px 15px 10px 15px;
+}
+.NavItems a {
+	color: #7a7a7a;
+	text-decoration: none;
+}
+.NavItems.Active {
+	border-bottom: 3px solid #1A73E8;
+}
+.NavItems a:hover {
+	color: #f3f3f3;
+}
+.NavItems.Active a {
+	color: #1A73E8;
+	font-weight: bold;
+}
+		/* Navigation Bar [END] */
+
+
+
+		/* Middle Content [START] */
+
+.ContentBox {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+
+}
 .InnerContent {
-	padding: .25in;
+	display: flex;
+	flex-direction: column;
+	max-width: 55%;
 }
+.MainHeaders {
+	text-align: center;
+	font-size: 4em;
+	position: relative;
+	cursor: default;
+}
+.OfferBoxes {
+	padding-bottom: 5%;
+}
+.OfferBoxes img {
+	max-width: 100%;
+	max-height: 270px;
+}
+.UpParts, .OfferBoxes {
+	position: relative;
+}
+.UpParts a:first-of-type, .OfferBoxes a:first-of-type {
+	position: absolute;
+	top: -53px;
 
-.LeftSidebar {
-	min-width: 160px;
-	max-width: 17%;
-	float: left;
-	position: fixed;
-	margin: auto;
 }
+		/* Middle Content [START] */
+
 
 
 		/* Footer [START] */
-.Footer {
-	max-width: 64%;
-	margin: auto;
-	background-color: #f3f3f3;
-	border-radius: 8px;
-	margin-top: 10px;
-	padding: 10px;
-	box-sizing: border-box;
-}
 
-/* This makes the div's width only 75% of the Footer class and makes any text centered */
-.FooterContent {
-	max-width: 75%;
-	margin: auto;
-	text-align: center;
-}
-
-/* Each div is seperated by padding instead of using <br> between each div */
-.FooterContent div {
-	padding: 3px;
-}
-
-/* Max width of this div is 300px */
-.WebTitle {
-	max-width: 300px;
-	margin: auto;
-}
-
-/* 100% of WebTitle class which is 300px */
-.WebTitle img {
-	max-width: 100%;
-}
-
-.SMRow {
+footer {
+	box-shadow: inset 0 1px 6px 0 #000000a1;
+	background-color: #1b1b1b;
 	display: flex;
-}
-
-.SocialMedia {
-	margin: auto;
-	max-width: 100px;
-}
-
-.SMColumn {
-	flex: 33.3333%;
-	padding-left: 3px;
-	padding-right: 3px;
-}
-
-.SMColumn img {
-	max-width: 23px;
-}
-
-.Copyright {
-	display: block;
-}
-
-.Copyright p {
-	font-size: 14px;
-	margin: 0;
+	justify-content: center;
+	margin-top: 10px;
 }
 		/* Footer [END] */
 
-#Logo {
-	display: block;
-	margin: 0 auto;
-	max-width: 65%;
-	overflow: auto;
-	padding-bottom: 5px;
-}
 
-.Navigation {
-	list-style-type: none;
-	padding: 0;
-	background-color: #f3f3f3;
-	overflow: auto;
-	border: 1px solid black;
-	max-width: 50%;
-	margin: auto;
-}
-
-.Navigation a {
-	text-align: center;
-	display: block;
-	color: #000;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-decoration: none;
-}
-
-.Navigation a.active {
-	background-color: #303030;
-	color: #fff;
-}
-
-.Navigation li a:hover:not(.active) {
-	background-color: #6ea6af;
-	color: #fff;
-	text-decoration: underline;
-}
 
 .Arrow {
 	position: fixed;
@@ -181,7 +140,6 @@ a:active {
 
 #SbS {
 	display: flex;
-    box-sizing: border-box;
 }
 
 .AMSide {
@@ -207,19 +165,6 @@ a:active {
 	width: auto;
 }
 
-.ResponsiveImages a img {
-	width: auto;
-	max-width: 100%;
-	height: 250px;
-	border: 1px solid black;
-}
-
-.ResponsiveImages hr {
-	width: auto;
-	max-width: 100%;
-	height: auto;
-}
-
 .Video {
 	display: block;
 	margin-left: auto;
@@ -237,10 +182,11 @@ a:active {
 /* The grid */
 .row {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .column {
-	flex: 16.6666%;
+	flex: 1;
 	padding: 5px;
 }
 
@@ -297,6 +243,7 @@ a:active {
 }
 		/* Gallery[END] */
 
+		
 
 		/* Form [START] */
 
@@ -305,7 +252,6 @@ label {
 	display: block;
 	font-weight: bold;
 	line-height: 20px;
-	color: #000;
 }
 
 /* Adds some space inside the textboxes */
@@ -381,4 +327,17 @@ textarea {
 .Buttons[type=submit] {
 	margin-left: 3px;
 }
+
 		/* Form [END] */
+
+
+
+/* After some learning */
+
+#LogoBox {
+	height: 5em;
+}
+
+#Logo {
+	max-height: 100%;
+}
